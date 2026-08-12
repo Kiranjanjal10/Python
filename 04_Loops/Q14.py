@@ -1,7 +1,13 @@
 # # Write a program to reverse a number using a while loop
 # Input: 12345
 # Output: 54321
+num = int(input("Enter a number: "))
 
-number=12345
+reverse = 0
 
-while(number < )
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+
+print("Reversed number:", reverse)
